@@ -1,0 +1,70 @@
+.row>div {
+    background-color: #f2f2f2;
+    /* margin: 10px 0; */
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px !important;
+}
+
+.rowBloque2 {
+    background-color: #e8e8e8;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.colBloque2 {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #4d5061;
+    margin: 0 !important;
+}
+
+.rowBloque3,
+.rowBloque4,
+.bloque5>.container>.row {
+    background-color: #e8e8e8;
+    /* height: 150px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.colBloque3 {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #4d5061;
+    margin: 0 !important;
+}
+
+.colBloque4,
+.bloque5>.container>.row>div,
+.bloque6>.container>.row>div {
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border: 1px solid #4d5061;
+
+}
+
+.bloque5>.container>.row,
+.bloque6>.container>.row {
+    /* height: 40px; */
+    /* text-align: center; */
+}
+
+.bloque6 {
+    margin-top: 20px;
+}
+
+.colAnidada {
+    background-color: gainsboro !important;
+    border: black solid 1px;
+}
+
+.rowInterior {
+    margin-bottom: 0px !important;
+}

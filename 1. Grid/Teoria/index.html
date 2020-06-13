@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Basics</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="css/styles.css">
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+</head>
+
+<body>
+
+
+      <table class="table container table-bordered tablaTamanios">
+            <thead class="thead-dark text-center">
+                  <tr>
+                        <th>xs</th>
+                        <th>sm</th>
+                        <th>md</th>
+                        <th>lg</th>
+                        <th>xl</th>
+                  </tr>
+            </thead>
+            <tbody class="text-center">
+                  <tr>
+                        <td>máx 575px</td>
+                        <td>576-767</td>
+                        <td>768-991</td>
+                        <td>992-1199</td>
+                        <td>1200 mín</td>
+                  </tr>
+
+            </tbody>
+      </table>
+      <div class="container">
+            <button class="btn btn-outline-primary"
+                    id="tablaTamanios">Tabla pantallas</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque1">Tamaños</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque2">Alineación vertical</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque3">Alineación horizontal</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque4">Offseting</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque5">Ordenación</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque6">Anidación</button>
+            <button class="btn btn-primary"
+                    id="ocultarBloque7">Visibilidad por tamaños</button>
+
+      </div>
+      <div class="container bloque1">
+            <h1>Bloque 1. Tamaños</h1>
+            <div class="row">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-8 bg-success text-white">
+                        <h2>Título 1</h2>
+                        <p>col-12 col-sm-6 col-md-4 col-lg-6 col-xl-8 bg-success text-white</p>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger text-white">
+                        <h2>Título 2</h2>
+                        <p>col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger text-white</p>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-dark text-white">
+                        <h2>Título 3</h2>
+                        <p>col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-dark text-white</p>
+                  </div>
+            </div>
+
+      </div>
+      <div class="container bloque1">
+            <div class="row">
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+                  <div class="col col-auto">col-auto</div>
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+            </div>
+            <div class="row">
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+                  <div class="col col-auto">col-auto (segunda prueba con texto más largo)</div>
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+            </div>
+            <div class="row">
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+                  <div class="col col-md-auto">col col-md-auto</div>
+                  <div class="col bg-dark text-white">col bg-dark text-white</div>
+            </div>
+      </div>
+      <div class="container bloque1">
+            <div class="row">
+                  <div class="col-6">
+                        <h4>Columna #1</h4>
+                        <p>Si quiero crear en una misma row cuatro columnas en las que cada col ocupa 6, es decir, que
+                              habría realmente dos row con dos col, meto entre los dos primeros col y los dos segundo un
+                              div con una class w-100</p>
+                  </div>
+                  <div class="col-6">
+                        <h4>Columna #2</h4>
+                        <p> Si quiero crear en una misma row cuatro columnas en las que cada col ocupa 6, es decir, que
+                              habría realmente dos row con dos col, meto entre los dos primeros col y los dos segundo un
+                              div con una class w-100</p>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col">
+                        <h4>Columna #3</h4>
+                        <p> Si quiero crear en una misma row cuatro columnas en las que cada col ocupa 6, es decir, que
+                              habría realmente dos row con dos col, meto entre los dos primeros col y los dos segundo un
+                              div con una class w-100</p>
+                  </div>
+                  <div class="col">
+                        <h4>Columna #4</h4>
+                        <p> Si quiero crear en una misma row cuatro columnas en las que cada col ocupa 6, es decir, que
+                              habría realmente dos row con dos col, meto entre los dos primeros col y los dos segundo un
+                              div con una class w-100</p>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container bloque2">
+            <h1>Bloque 2. Alineación vertical</h1>
+            <div class="row align-items-start rowBloque2">
+                  <div class="col colBloque2">
+                        Columna #1 row.align-<b>items</b>-start
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #2 row.align-<b>items</b>-start
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #3 row.align-<b>items</b>-start
+                  </div>
+            </div>
+            <div class="row align-items-center rowBloque2">
+                  <div class="col colBloque2">
+                        Columna #1 row.align-<b>items</b>-center
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #2 row.align-<b>items</b>-center
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #3 row.align-<b>items</b>-center
+                  </div>
+            </div>
+            <div class="row align-items-end rowBloque2">
+                  <div class="col colBloque2">
+                        Columna #1 row.align-<b>items</b>-end
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #2 row.align-<b>items</b>-end
+                  </div>
+                  <div class="col colBloque2">
+                        Columna #3 row.align-<b>items</b>-end
+                  </div>
+            </div>
+            <br><br>
+
+            <h2 class="text-center">Alineación independiente</h2>
+            <div class="row rowBloque2">
+                  <div class="col align-self-start colBloque2">
+                        Columna #1 col.align-<b>self</b>-start
+                  </div>
+                  <div class="col align-self-center colBloque2">
+                        Columna #2 col.align-<b>self</b>-center
+                  </div>
+                  <div class="col align-self-end colBloque2">
+                        Columna #3 col.align-<b>self</b>-end
+                  </div>
+            </div>
+      </div>
+
+      <div class="container bloque3">
+            <div class="row rowBloque3 justify-content-start">
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #1</h5>
+                        <p>row.justify-content-start</p>
+                  </div>
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #2</h5>
+                        <p>row.justify-content-start</p>
+                  </div>
+            </div>
+            <div class="row rowBloque3 justify-content-center">
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #3</h5>
+                        <p>row.justify-content-center</p>
+                  </div>
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #4</h5>
+                        <p>row.justify-content-center</p>
+                  </div>
+            </div>
+            <div class="row rowBloque3 justify-content-end">
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #5</h5>
+                        <p>row.justify-content-end</p>
+                  </div>
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #6</h5>
+                        <p>row.justify-content-end</p>
+                  </div>
+            </div>
+            <div class="row rowBloque3 justify-content-around">
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #3</h5>
+                        <p>row.justify-content-around</p>
+                  </div>
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #4</h5>
+                        <p>row.justify-content-around</p>
+                  </div>
+            </div>
+            <div class="row rowBloque3 justify-content-between">
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #5</h5>
+                        <p>row.justify-content-between</p>
+                  </div>
+                  <div class="col-4 colBloque3">
+                        <h5>Columna #6</h5>
+                        <p>row.justify-content-between</p>
+                  </div>
+            </div>
+
+      </div>
+      <div class="bloque4">
+            <div class="container">
+                  <div class="row rowBloque4">
+                        <div class="col-2 offset-1 colBloque4">
+                              <p>col.col-2 offset-1</p>
+                        </div>
+                  </div>
+                  <div class="row rowBloque4">
+                        <div class="col-4 offset-4 colBloque4">
+                              <p>col.col-4 offset-4</p>
+                        </div>
+                  </div>
+                  <div class="row rowBloque4">
+                        <div class="col-2 offset-2 colBloque4">
+                              <p>col.col-2 offset-2</p>
+                        </div>
+                        <div class="col-3 offset-1 colBloque4">
+                              <p>col.col-3 offset-1</p>
+                        </div>
+                  </div>
+                  <div class="row rowBloque4">
+                        <div class="col-4 colBloque4 offset-1 offset-md-3 offset-lg-6 offset-xl-0">
+                              col.col-4 offset-1 offset-md-3 offset-lg-6 offset-xl-0
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="bloque5">
+            <div class="container">
+                  <div class="row justify-content-between">
+                        <div class="col-2 order-last">
+                              <h5>Columna 1#</h5>
+                              <p>col.col-2 <b>order-last</b></p>
+                        </div>
+                        <div class="col-2">
+                              <h5>Columna 2#</h5>
+                              <p>col.col-2</p>
+                        </div>
+                        <div class="col-2 order-first">
+                              <h5>Columna 3#</h5>
+                              <p>col.col-2 <b>order-first</b></p>
+                        </div>
+                        <div class="col-2 ">
+                              <h5>Columna 4#</h5>
+                              <p>col.col-2</p>
+                        </div>
+                  </div>
+
+                  <div class="row justify-content-between">
+                        <div class="col-2 order-2">
+                              <h5>Columna 1#</h5>
+                              <p>col.col-2 <b>order-2</b></p>
+                        </div>
+                        <div class="col-2 order-3">
+                              <h5>Columna 2#</h5>
+                              <p>col.col-2 <b>order-3</b></p>
+                        </div>
+                        <div class="col-2 order-1">
+                              <h5>Columna 3#</h5>
+                              <p>col.col-2 <b>order-1</b></p>
+                        </div>
+                        <div class="col-2 ">
+                              <h5>Columna 4#</h5>
+                              <p>col.col-2</p>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+
+      <div class="bloque6">
+            <div class="container">
+                  <div class="row ">
+                        <div class="col-md-6">Columna #1 col.col-md-6
+                              <div class="row rowInterior">
+                                    <div class="col colAnidada">Columna #1.1 col.col</div>
+                                    <div class="col colAnidada">Columna #1.2 col.col</div>
+                              </div>
+                              <div class="row rowInterior">
+                                    <div class="col-4 colAnidada">Columna #2.1 col.col-4</div>
+                                    <div class="col-4 colAnidada">Columna #2.2 col.col-4</div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="row h-100">
+                                    <div class="col-2">col-2</div>
+                                    <div class="col p-0">
+                                          <div class="col h-25 colAnidada">col.col h-25</div>
+                                          <div class="col-8 offset-1 h-25 colAnidada">col.col-8 offset-1 h-25</div>
+                                          <div class="col-6 h-25 colAnidada">col.col-6 h-25</div>
+                                          <div class="col-5 offset-6 h-25 colAnidada">col.col-5 offset-6 h-25</div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row ">
+
+                        <div class="col">
+                              <div class="row h-100">
+                                    <div class="col-2">col-2</div>
+                                    <div class="col p-0">
+                                          <div class="col h-25 colAnidada">col.col h-25</div>
+                                          <div class="col h-25 colAnidada">col.col h-25</div>
+                                          <div class="col h-25 colAnidada">col.col h-25</div>
+                                          <div class="col h-25 colAnidada">col.col h-25</div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="bloque7">
+
+            <div class="row mt-3">
+                  <div class="col d-block colAnidada">
+                        <p>Visible en todos</p>
+                        <p>col.col d-block </p>
+                  </div>
+                  <div class="col d-block d-sm-none colAnidada">
+                        <p>Visible cuando viewport &lt; sm</p>
+                        <p>col.col d-block d-sm-none </p>
+                  </div>
+                  <div class="col d-block d-md-none colAnidada">
+                        <p>Visible cuando viewport &lt; md</p>
+                        <p>col.col d-block d-md-none </p>
+                  </div>
+                  <div class="col d-block d-lg-none colAnidada">
+                        <p>Visible cuando viewport &lt; lg</p>
+                        <p>col.col d-block d-lg-none </p>
+                  </div>
+                  <div class="col d-block d-xl-none colAnidada">
+                        <p>Visible cuando viewport &lt; xl</p>
+                        <p>col.col d-block d-xl-none </p>
+                  </div>
+
+            </div>
+            <div class="row mt-3">
+
+                  <div class="col-12 d-block d-md-none colAnidada">
+                        <p>Ahora soy menor al md</p>
+                        <p>col.col d-block d-md-none </p>
+                  </div>
+                  <div class="col-12 d-none d-md-block colAnidada">
+                        <p>Ahora soy mayor al md</p>
+                        <p>col.col d-none d-md-block </p>
+                  </div>
+                  <div class="col w-100 mt-2"></div>
+                  <div class="col-12 colAnidada">
+
+                        <p>Cuando el atributo es d-none, significa que no lo veremos hasta que se tope con un d-XX-block
+                              siendo XX los tamaños de bootstrap</p>
+                        <p>Cuando el atributo es d-block, significa que lo veremos hasta que se tope con un d-XX-none
+                              siendo XX los tamaños de bootstrap</p>
+                  </div>
+
+            </div>
+            <div class="row mt-3">
+                  <div class="col d-none colAnidada">
+                        <p>Oculto en todos</p>
+                        <p>col.col d-none </p>
+                  </div>
+                  <div class="col d-none d-sm-block colAnidada">
+                        <p>Oculto sólo cuando viewport es xs</p>
+                        <p>col.col d-none d-sm-block </p>
+                  </div>
+                  <div class="col d-md-block d-sm-none colAnidada">
+                        <p>Oculto sólo cuando viewport es sm</p>
+                        <p>col.col d-md-block d-sm-none </p>
+                  </div>
+                  <div class="col d-lg-block d-md-none colAnidada">
+                        <p>Oculto sólo cuando viewport es md</p>
+                        <p>col.col d-lg-block d-md-none </p>
+                  </div>
+                  <div class="col d-xl-block d-lg-none colAnidada">
+                        <p>Oculto sólo cuando viewport es lg</p>
+                        <p>col.col d-xl-block d-lg-none </p>
+                  </div>
+                  <div class="col d-xl-none colAnidada">
+                        <p>Oculto sólo cuando viewport es xl</p>
+                        <p>col.col d-xl-none </p>
+                  </div>
+
+            </div>
+
+
+      </div>
+
+      <!-- links de bootstrap -->
+      <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+            <script src="js/app.js"></script>
+      </div>
+</body>
+
+</html>

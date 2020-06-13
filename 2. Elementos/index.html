@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Basics</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="css/styles.css">
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+</head>
+
+<body>
+      <div class="container">
+
+            <div class="botones">
+                  <button class="btn btn-primary"
+                          id="ocultarBloque1">Viewports</button>
+                  <button class="btn btn-primary"
+                          id="ocultarBloque2">Tipografía</button>
+                  <button class="btn btn-primary"
+                          id="ocultarBloque3">Imagenes</button>
+                  <button class="btn btn-primary"
+                          id="ocultarBloque4">Tablas</button>
+                  <button class="btn btn-primary"
+                          id="ocultarBloque5">Media object</button>
+
+            </div>
+            <div class="bloque1">
+
+                  <div class="container">
+                        <div class="row justify-content-center">
+                              <div class="col d-xs-block text-uppercase bg-light p-3 text-center"> Size: sm </div>
+                              <div class="col d-none d-sm-block text-uppercase bg-light p-3 text-center"> Size: sm
+                              </div>
+                              <div class="col d-none d-md-block text-uppercase bg-light p-3 text-center"> Size: md
+                              </div>
+                              <div class="col d-none d-lg-block text-uppercase bg-light p-3 text-center"> Size: lg
+                              </div>
+                              <div class="col d-none d-xl-block text-uppercase bg-light p-3 text-center"> Size: xl
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="bloque2 mb-5">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12">
+                                    <h1>Encabezado h1 <small class="text-muted">small.text-muted</small> </h1>
+                                    <h2>Encabezado h2 <small class="text-muted">small.text-muted</small> </h2>
+                                    <h3>Encabezado h3 <small class="text-muted">small.text-muted</small> </h3>
+                                    <h4>Encabezado h4 <small class="text-muted">small.text-muted</small> </h4>
+                                    <h5>Encabezado h5 <small class="text-muted">small.text-muted</small> </h5>
+                                    <h6>Encabezado h6 <small class="text-muted">small.text-muted</small> </h6>
+                              </div>
+                              <div class="col-12">
+                                    <hr>
+                                    <p class="h1">p.h1</p>
+                                    <p class="h2">p.h2</p>
+                                    <p class="h3">p.h3</p>
+                                    <p class="h4">p.h4</p>
+                                    <p class="h5">p.h5</p>
+                                    <p class="h6">p.h6</p>
+                              </div>
+
+                              <div class="col-12">
+                                    <hr>
+                                    <h1 class="display-1">h1.display-1</h1>
+                                    <h2 class="display-2">h2.display-2</h2>
+                                    <h3 class="display-3">h3.display-3</h3>
+                                    <h4 class="display-4">h4.display-4</h4>
+                              </div>
+
+                              <div class="col-12">
+                                    <hr>
+                                    <p class="lead"><b>(p.lead)</b> Lorem, ipsum dolor sit amet consectetur adipisicing
+                                          elit. Dolorum,
+                                          sunt
+                                          voluptatem deleniti.</p>
+                                    <p>(p clásico) Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                                          sunt
+                                          voluptatem deleniti.</p>
+                              </div>
+                              <div class="col-12">
+                                    <hr>
+                                    <p> <mark>texto con etiqueta mark</mark>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <del>texto con etiqueta del</del>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <s>texto con etiqueta s</s>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <ins>texto con etiqueta ins </ins>
+                                          <-> texto normal
+                                    </p>
+                                    <p><u>texto con etiqueta u </u>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <strong>texto con etiqueta strong </strong>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <small>texto con etiqueta small </small>
+                                          <-> texto normal
+                                    </p>
+                                    <p> <em>texto con etiqueta em </em>
+                                          <-> texto normal
+                                    </p>
+                              </div>
+                              <div class="col-4">
+                                    <hr>
+                                    <p class="text-justify"><b>p.text-justify</b> Lorem ipsum dolor sit amet consectetur
+                                          adipisicing elit. Illum modi totam
+                                          consequatur, impedit accusantium quos ad dolores laudantium error eveniet
+                                          provident debitis quis dolore adipisci eum? Vitae animi quisquam debitis?</p>
+
+                                    <div class="card">
+                                          <div class="card-block">
+                                                <b>dic.card>div.card-block</b>Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit.Illum modi
+                                                totam consequatur, impedit accusantium.
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="w-100"></div>
+                              <div class="col-12 bg-light">
+                                    <p class="text-left"><b>p.text-left</b>Texto alineado a la izquierda</p>
+                                    <p class="text-center"><b>p.text-center</b>Texto alineado en el centro</p>
+                                    <p class="text-right"><b>p.text-right</b>Texto alineado a la derecha</p>
+                              </div>
+                              <hr>
+                              <div class="col-12 bg-dark text-white">
+                                    <p class="text-lg-left text-xl-center"><b>p.text-lg-left text-xl-center</b> texto
+                                          alineado segun viewport
+
+                                    </p>
+                                    <p class="text-lg-center text-xl-right"><b>p.text-lg-center text-xl-right</b> texto
+                                          alineado segun viewport
+                                    </p>
+                                    <p class="text-lg-right text-xl-left"><b>p.text-lg-right text-xl-left</b> texto
+                                          alineado segun viewport
+                                    </p>
+                              </div>
+                              <div class="col">
+                                    <hr>
+                                    <p class="text-uppercase">p.text-uppercase</p>
+                                    <p class="text-lowercase">p.text-lowercase</p>
+                                    <p class="text-capitalize">p.text-capitalize</p>
+                              </div>
+                              <div class="w-100">
+                              </div>
+
+                              <div class="col">
+                                    <p class="font-weight-bold">p.font-weight-bold</p>
+                                    <p class="font-weight-normal">p.font-weight-normal</p>
+                                    <p class="font-italic">p.font-italic</p>
+                              </div>
+
+                              <div class="w-100"> </div>
+
+                              <div class="col-12">
+                                    <blockquote class="blockquote">
+                                          <p class="mb-0">Es un ejemplo de frase con blockquote</p>
+                                          <footer class="blockquote-footer">Persona que la escribió <cite
+                                                      title="Source Title">y donde la plasmó</cite></footer>
+                                    </blockquote>
+
+                                    <blockquote class="blockquote text-right">
+                                          <p class="mb-0">Es un ejemplo de frase con blockquote</p>
+                                          <footer class="blockquote-footer">Persona que la escribió <cite
+                                                      title="Source Title">y donde la plasmó</cite></footer>
+                                    </blockquote>
+
+                              </div>
+                              <div class="col-12 ">
+                                    <p>Uso de la etiqueta code => <code>
+                                                ejemplo
+                                          </code></p>
+
+                                    <p>Con la etiqueta pre lo que hacemos es un uso estricto de todo lo que haya en el
+                                          párrafo, inclyendo espaicos y demás =></p>
+                                    <p>
+
+                                          <pre>                    Ejemplo</pre>
+
+                                    </p>
+
+                                    <p>Por último, la etiqueta kbd nos permite simular unas teclas => <kbd>Control + C
+                                          </kbd>
+                                    </p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="bloque3 mt-5 mb-5">
+                  <div class="container">
+                        <p>La imagen siguiente no tiene padding por => row.no-gutters</p>
+                        <div class="row no-gutters ">
+                              <h5></h5>
+                              <div class="col fondoColumna">
+                                    <img src="img/200-200.jpg">
+                              </div>
+
+                        </div>
+                        <p class="mt-5">La imagen siguiente se adapta al formato => img.img-fluid</p>
+                        <div class="row no-gutters ">
+                              <div class="col fondoColumna">
+                                    <img class="img-fluid"
+                                         src="img/800-800.jpg">
+                              </div>
+
+                        </div>
+
+                        <p class="mt-5">Las siguientes imagenes tienen img.float-left y img.float-right</p>
+                        <div class="row no-gutters ">
+                              <div class="col fondoColumna">
+                                    <img class="img-fluid float-left"
+                                         src="img/200-200.jpg">
+                                    <img class="img-fluid float-right"
+                                         src="img/200-200.jpg">
+                              </div>
+
+                        </div>
+
+                        <p class="mt-5">Las siguientes imagenes tienen img.rounded (izq) y img.img-thumbnail(dcha)</p>
+                        <div class="row no-gutters ">
+                              <div class="col">
+                                    <img class="img-fluid float-left rounded"
+                                         src="img/200-200.jpg">
+                                    <img class="img-fluid float-right img-thumbnail"
+                                         src="img/200-200.jpg">
+                              </div>
+
+                        </div>
+
+                        <p class="mt-5">Las siguientes imagenes tienen img.rounded (izq) y img.img-thumbnail(dcha)</p>
+                        <div class="row no-gutters ">
+                              <div class="col-5 fondoColumna">
+                                    <figure class="figure">
+                                          <img class="img-fluid rounded"
+                                               src="img/200-200.jpg">
+
+                                          <figcaption class="figure-caption">
+                                                <p>Pie de imagen (este trozo es mejor inspeccionarlo)</p>
+                                          </figcaption>
+                                    </figure>
+
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
+
+
+            <div class="bloque4 mt-5 mb-5">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col">
+                                    <p><code>table.table table-striped table-bordered table-hover (table-sm)
+                                                table-responsive</code></p>
+                                    <p><code>thead.thead-dark</code></p>
+                                    <p>Con los tr se pueden hacer de dos maneras<code>tr.table-danger</code> o
+                                          <code>tr.bg-danger</code>. La diferencia es importante y se ve al hacer
+                                          hover(las tres ultimas tienen el bg-).
+                                    </p>
+                                    <table class="table table-striped table-bordered table-hover table-responsive">
+                                          <thead class="thead-dark">
+                                                <th>Nombre</th>
+                                                <th>Edad</th>
+                                                <th>País</th>
+                                          </thead>
+                                          <tr>
+                                                <td>Carlos</td>
+                                                <td>21</td>
+                                                <td>Suecia</td>
+                                          </tr>
+                                          <tr>
+                                                <td>Juan</td>
+                                                <td>28</td>
+                                                <td>Dinamarca</td>
+                                          </tr>
+                                          <tr>
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="table-danger">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="table-active">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="table-dark">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="table-primary">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="bg-primary">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="bg-success">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                          <tr class="bg-secondary">
+                                                <td>César</td>
+                                                <td>51</td>
+                                                <td>Rusia</td>
+                                          </tr>
+                                    </table>
+
+
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <!-- links de bootstrap -->
+            <div>
+                  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                          crossorigin="anonymous"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                          crossorigin="anonymous"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                          crossorigin="anonymous"></script>
+                  <script src="js/app.js"></script>
+            </div>
+</body>
+
+</html>
