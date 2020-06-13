@@ -23,8 +23,8 @@ $(document).ready(function () {
   $('.bloque1').hide();
   $('.bloque2').hide();
   $('.bloque3').hide();
-  //$('.bloque4').hide();
-  $('.bloque5').hide();
+  $('.bloque4').hide();
+  //$('.bloque5').hide();
   $('.bloque6').hide();
   $('.bloque7').hide();
 });
