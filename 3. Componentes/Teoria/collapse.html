@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <!-- <link rel="stylesheet"
+          type="text/css"
+          href="css/styles.css"> -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+          crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <div class="row mt-3">
+        <div class="col-6">
+            <p>
+                <a href="#bloque1"
+                   class="btn btn-primary"
+                   aria-expanded="false"
+                   aria-controls="bloque1"
+                   data-toggle="collapse">Bloque 1</a>
+            </p>
+            <div class="collapse"
+                 id="bloque1">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h3>Titulo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, autem. Ad error accusantium
+                                assumenda libero mollitia optio iure corrupti eum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-6">
+            <p>
+                <a href="#bloque12"
+                   class="btn btn-secondary"
+                   aria-expanded="false"
+                   aria-controls="bloque12"
+                   data-toggle="collapse">Bloque 2</a>
+            </p>
+            <div class="collapse"
+                 id="bloque12">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h3>Titulo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, autem. Ad error
+                                accusantium
+                                assumenda libero mollitia optio iure corrupti eum.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-3">
+        <div class="col">
+            <div id="miAcordeon"
+                 role="tablist"
+                 aria-multiselectable="true">
+                <div class="card">
+                    <div class="card-header"
+                         role="tab"
+                         id="heading1">
+                        <h4>
+                            <a href="#collapse1"
+                               data-toggle="collapse"
+                               data-parent="#miAcordeon"
+                               aria-expanded="true"
+                               aria-controls="collapse1">Titulo 1</a>
+                        </h4>
+                    </div>
+                    <div class="card-body show"
+                         role="tabpanel"
+                         aria-labelledby="heading1"
+                         id="collapse1">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto ut odio
+                                mollitia,
+                                molestias fugiat quia cum quasi voluptas consequuntur et possimus pariatur modi quisquam
+                                placeat, saepe repellat sequi earum ipsam obcaecati doloribus incidunt maiores
+                                architecto.
+                                Aperiam, eveniet. Facere commodi dolorum doloribus ipsam temporibus odit, iure nemo
+                                libero
+                                sit assumenda ratione adipisci recusandae? Accusamus optio voluptatum corporis nesciunt.
+                                Nesciunt vero porro qui obcaecati non inventore quae quas aspernatur iste. Aut veniam
+                                accusantium labore odio quidem quaerat accusamus nesciunt ex culpa, incidunt minus
+                                voluptatibus placeat doloremque dolores suscipit. Obcaecati, saepe ipsam. Dolorum,
+                                blanditiis? Porro, quaerat ratione. Labore fugiat assumenda ex recusandae?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"
+                         role="tab"
+                         id="heading2">
+                        <h4>
+                            <a href="#collapse2"
+                               data-toggle="collapse"
+                               data-parent="#miAcordeon"
+                               aria-expanded="true"
+                               aria-controls="collapse2">Titulo 2</a>
+                        </h4>
+                    </div>
+                    <div class="card-body collapse"
+                         role="tabpanel"
+                         aria-labelledby="heading2"
+                         id="collapse2">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto ut odio
+                                mollitia,
+                                molestias fugiat quia cum quasi voluptas consequuntur et possimus pariatur modi
+                                quisquam
+                                placeat, saepe repellat sequi earum ipsam obcaecati doloribus incidunt maiores
+                                architecto.
+                                Aperiam, eveniet. Facere commodi dolorum doloribus ipsam temporibus odit, iure nemo
+                                libero
+                                sit assumenda ratione adipisci recusandae? Accusamus optio voluptatum corporis
+                                nesciunt.
+                                Nesciunt vero porro qui obcaecati non inventore quae quas aspernatur iste. Aut veniam
+                                accusantium labore odio quidem quaerat accusamus nesciunt ex culpa, incidunt minus
+                                voluptatibus placeat doloremque dolores suscipit. Obcaecati, saepe ipsam. Dolorum,
+                                blanditiis? Porro, quaerat ratione. Labore fugiat assumenda ex recusandae?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"
+                         role="tab"
+                         id="heading3">
+                        <h4>
+                            <a href="#collapse3"
+                               data-toggle="collapse"
+                               data-parent="#miAcordeon"
+                               aria-expanded="true"
+                               aria-controls="collapse3">Titulo 3</a>
+                        </h4>
+                    </div>
+                    <div class="card-body collapse"
+                         role="tabpanel"
+                         aria-labelledby="heading3"
+                         id="collapse3">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto ut odio
+                                mollitia,
+                                molestias fugiat quia cum quasi voluptas consequuntur et possimus pariatur modi
+                                quisquam
+                                placeat, saepe repellat sequi earum ipsam obcaecati doloribus incidunt maiores
+                                architecto.
+                                Aperiam, eveniet. Facere commodi dolorum doloribus ipsam temporibus odit, iure nemo
+                                libero
+                                sit assumenda ratione adipisci recusandae? Accusamus optio voluptatum corporis
+                                nesciunt.
+                                Nesciunt vero porro qui obcaecati non inventore quae quas aspernatur iste. Aut veniam
+                                accusantium labore odio quidem quaerat accusamus nesciunt ex culpa, incidunt minus
+                                voluptatibus placeat doloremque dolores suscipit. Obcaecati, saepe ipsam. Dolorum,
+                                blanditiis? Porro, quaerat ratione. Labore fugiat assumenda ex recusandae?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- links de bootstrap -->
+    <div>
+        <script src="
+                             https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+        <!-- <script src="js/app.js"></script> -->
+    </div>
+</body>
+
+</html>
