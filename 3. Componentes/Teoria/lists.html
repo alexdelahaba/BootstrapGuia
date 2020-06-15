@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Basics</title>
+      <!-- <link rel="stylesheet"
+          type="text/css"
+          href="css/styles.css"> -->
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+</head>
+
+<body class="container my-5">
+      <div class="row">
+            <div class="col-6 mt-3">
+                  <ul class="list-group">
+                        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="list-group-item active">Lorem ipsum dolor sit amet.</li>
+                        <li class="list-group-item disabled">Lorem ipsum dolor sit amet.</li>
+                        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+                  </ul>
+            </div>
+
+            <div class="col-6 mt-3">
+                  <div class="list-group">
+                        <a href="#"
+                           class="list-group-item list-group-item-action active">
+                              Cras justo odio
+                        </a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">Morbi leo risus</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                  </div>
+            </div>
+
+            <div class="col-6 mt-3">
+                  <ul class="list-group">
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-primary">This is a primary list group item</li>
+                        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
+                        <li class="list-group-item list-group-item-success">This is a success list group item</li>
+                        <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+                        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                        <li class="list-group-item list-group-item-info">This is a info list group item</li>
+                        <li class="list-group-item list-group-item-light">This is a light list group item</li>
+                        <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+                  </ul>
+            </div>
+
+            <div class="col-6 mt-3">
+                  <div class="list-group">
+                        <a href="#"
+                           class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+
+
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-primary">This is a primary list
+                              group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary
+                              list group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-success">This is a success list
+                              group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-danger">This is a danger list
+                              group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-warning">This is a warning list
+                              group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-info">This is a info list group
+                              item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-light">This is a light list
+                              group item</a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group
+                              item</a>
+                  </div>
+            </div>
+
+            <div class="col-6 mt-3">
+                  <div class="row">
+                        <div class="col-4">
+                              <div class="list-group"
+                                   id="list-tab"
+                                   role="tablist">
+                                    <a class="list-group-item list-group-item-action active"
+                                       id="list-home-list"
+                                       data-toggle="list"
+                                       href="#list-home"
+                                       role="tab"
+                                       aria-controls="home">Home</a>
+                                    <a class="list-group-item list-group-item-action"
+                                       id="list-profile-list"
+                                       data-toggle="list"
+                                       href="#list-profile"
+                                       role="tab"
+                                       aria-controls="profile">Profile</a>
+                                    <a class="list-group-item list-group-item-action"
+                                       id="list-messages-list"
+                                       data-toggle="list"
+                                       href="#list-messages"
+                                       role="tab"
+                                       aria-controls="messages">Messages</a>
+                                    <a class="list-group-item list-group-item-action"
+                                       id="list-settings-list"
+                                       data-toggle="list"
+                                       href="#list-settings"
+                                       role="tab"
+                                       aria-controls="settings">Settings</a>
+                              </div>
+                        </div>
+                        <div class="col-8">
+                              <div class="tab-content"
+                                   id="nav-tabContent">
+                                    <div class="tab-pane fade show active"
+                                         id="list-home"
+                                         role="tabpanel"
+                                         aria-labelledby="list-home-list">1. Lorem ipsum dolor sit, amet consectetur
+                                          adipisicing elit. Asperiores, tempora?</div>
+                                    <div class="tab-pane fade"
+                                         id="list-profile"
+                                         role="tabpanel"
+                                         aria-labelledby="list-profile-list">2. Lorem ipsum dolor sit, amet consectetur
+                                          adipisicing elit. Asperiores, tempora?</div>
+                                    <div class="tab-pane fade"
+                                         id="list-messages"
+                                         role="tabpanel"
+                                         aria-labelledby="list-messages-list">3. Lorem ipsum dolor sit, amet consectetur
+                                          adipisicing elit. Asperiores, tempora?</div>
+                                    <div class="tab-pane fade"
+                                         id="list-settings"
+                                         role="tabpanel"
+                                         aria-labelledby="list-settings-list">4. Lorem ipsum dolor sit, amet consectetur
+                                          adipisicing elit. Asperiores, tempora?</div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                  <div class="list-group">
+                        <a href="#"
+                           class="list-group-item list-group-item-action flex-column align-items-start active">
+                              <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small>3 days ago</small>
+                              </div>
+                              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                    veritatis fugit necessitatibus iste velit quaerat, architecto vel. Nulla fuga
+                                    voluptatibus, sunt tenetur minus ipsum ad doloribus praesentium? Placeat assumenda
+                                    nihil accusantium cum ullam ex consequuntur est, magnam ratione ipsa consequatur hic
+                                    vel quasi incidunt atque pariatur ipsam quibusdam! Natus, voluptatum.</p>
+                              <small>Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                              </div>
+                              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                    veritatis fugit necessitatibus iste velit quaerat, architecto vel. Nulla fuga
+                                    voluptatibus, sunt tenetur minus ipsum ad doloribus praesentium? Placeat assumenda
+                                    nihil accusantium cum ullam ex consequuntur est, magnam ratione ipsa consequatur hic
+                                    vel quasi incidunt atque pariatur ipsam quibusdam! Natus, voluptatum.</p>
+                              <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                        <a href="#"
+                           class="list-group-item list-group-item-action flex-column align-items-start">
+                              <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                              </div>
+                              <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                                    veritatis fugit necessitatibus iste velit quaerat, architecto vel. Nulla fuga
+                                    voluptatibus, sunt tenetur minus ipsum ad doloribus praesentium? Placeat assumenda
+                                    nihil accusantium cum ullam ex consequuntur est, magnam ratione ipsa consequatur hic
+                                    vel quasi incidunt atque pariatur ipsam quibusdam! Natus, voluptatum.</p>
+                              <small class="text-muted">Donec id elit non mi porta.</small>
+                        </a>
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- links de bootstrap -->
+      <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+            <!-- <script src="js/app.js"></script> -->
+      </div>
+</body>
+
+</html>

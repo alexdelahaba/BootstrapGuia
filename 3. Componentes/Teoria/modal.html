@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Basics</title>
+      <!-- <link rel="stylesheet"
+          type="text/css"
+          href="css/styles.css"> -->
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+</head>
+
+<body class="container my-5">
+      <div class="row">
+            <div class="col-6">
+                  <button class="btn btn-primary"
+                          data-toggle="modal"
+                          data-target="#miPrimerModal">
+                        Abrir modal
+                  </button>
+                  <div class="modal fade"
+                       id="miPrimerModal"
+                       tabindex="-1"
+                       role="dialog"
+                       aria-labelledby="miPrimerModal"
+                       aria-hidden="true">
+                        <div class="modal-dialog">
+                              <div class="modal-content">
+                                    <div class="modal-header">
+                                          <h1>Soy el modal</h1>
+                                          <button class="close"
+                                                  data-dismiss="modal"
+                                                  aria-label="Cerrar">
+                                                <span arial-hidden="true">&times;</span>
+                                          </button>
+                                    </div>
+                                    <div class="modal-body">
+                                          <h5>Soy el body del modal</h5>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate
+                                                rem ratione quos debitis esse quasi consectetur quod earum quis officia
+                                                pariatur atque, cumque accusantium ducimus voluptatum inventore
+                                                perferendis molestias harum distinctio aliquam ut est hic. Aliquid unde
+                                                dolorum rem earum quis, facere repellendus eveniet dolorem perspiciatis
+                                                ex deserunt natus.</p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                  <button class="btn btn-primary"
+                          data-toggle="modal"
+                          data-target="#miPrimerModalGrid">
+                        Abrir modal grid
+                  </button>
+                  <div class="modal fade"
+                       id="miPrimerModalGrid"
+                       tabindex="-1"
+                       role="dialog"
+                       aria-labelledby="miPrimerModalGrid"
+                       aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                    <div class="modal-header">
+                                          <h1>Soy el modal con grid</h1>
+                                          <button class="close"
+                                                  data-dismiss="modal"
+                                                  aria-label="Cerrar">
+                                                <span arial-hidden="true">&times;</span>
+                                          </button>
+                                    </div>
+                                    <div class="modal-body">
+                                          <div class="container-fluid">
+                                                <div class="row">
+                                                      <div class="col">
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Voluptas at asperiores commodi aliquam odit ea veniam quo
+                                                            pariatur atque illum!
+                                                      </div>
+                                                      <div class="col bg-info text-white">
+                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                            Dicta incidunt perferendis quos nulla dolores harum sed
+                                                            aliquid doloremque recusandae voluptatum sit fugiat
+                                                            voluptates aliquam ad dolor, illo officiis laboriosam
+                                                            deserunt?
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                          <button type="button"
+                                                  class="btn btn-success text-right"
+                                                  data-dismiss="modal">
+                                                Aceptar
+                                          </button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- links de bootstrap -->
+      <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+            <!-- <script src="js/app.js"></script> -->
+      </div>
+</body>
+
+</html>
