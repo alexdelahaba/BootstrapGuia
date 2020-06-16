@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Basics</title>
+      <!-- <link rel="stylesheet"
+          type="text/css"
+          href="css/styles.css"> -->
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+      <style>
+            .caja {
+                  border: 1px solid black;
+                  width: 100px;
+                  height: 100px;
+            }
+      </style>
+</head>
+
+<body class="container my-5">
+      <h1>Borders</h1>
+      <hr>
+      <div class="row">
+            <div class="col-2">
+                  <div class="caja bg-light"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-light border-0"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-light border-top-0"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-light border-bottom-0"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-light border-right-0"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-light border-left-0"> </div>
+            </div>
+      </div>
+      <div class="row mt-3">
+            <div class="col-2">
+                  <div class="caja bg-primary"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-primary rounded"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-primary rounded-top"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-primary rounded-bottom"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-primary rounded-left"> </div>
+            </div>
+            <div class="col-2">
+                  <div class="caja bg-primary rounded-right"> </div>
+            </div>
+            <div class="col-2 mt-3">
+                  <div class="caja bg-primary rounded-circle"> </div>
+            </div>
+            <div class="col-2 mt-3">
+                  <div class="caja bg-primary rounded-0"> </div>
+            </div>
+      </div>
+      <h1 class="mt-5">Display</h1>
+      <hr>
+      <div class="row my-3">
+            <div class="col-12">
+                  <div class="bg-primary text-white p-2 mb-3">
+                        Elemento tipo bloque
+                  </div>
+                  <span class="bg-success text-white mb-3 p-2">Elemento de tipo linea</span>
+                  <span class="bg-success text-white mb-3 p-2">Elemento de tipo linea 2</span>
+
+            </div>
+            <div class="col-12 mt-3">
+                  <span class="bg-success text-white d-block p-2">Elemento de tipo linea modificado a tipo
+                        inline-block</span>
+            </div>
+            <div class="col-12 mt-3">
+                  <span class="bg-success text-white d-block p-2">Elemento de tipo linea modificado a tipo
+                        bloque</span>
+            </div>
+            <div class="col-12 mt-3">
+                  <div class="bg-success text-white d-inline-block p-2">Elemento de tipo bloque modificado a tipo
+                        linea</div>
+            </div>
+      </div>
+
+      <h1 class="mt-5">Clearfix</h1>
+      <hr>
+      <div class="row my-3">
+            <div class="col-12">
+                  <div class="bg-dark clearfix">
+                        <div class="caja float-left bg-primary d-inline-block"></div>
+                        <div class="caja float-right bg-primary d-inline-block"></div>
+                  </div>
+            </div>
+      </div>
+
+      <h1 class="mt-5">Colores</h1>
+      <hr>
+      <div class="row my-3">
+            <div class="col-6">
+                  <p class="text-muted">p.text-muted</p>
+                  <p class="text-primary">p.text-primary</p>
+                  <p class="text-secondary">p.text-secondary</p>
+                  <p class="text-success">p.text-success</p>
+                  <p class="text-danger">p.text-danger</p>
+                  <p class="text-light">p.text-light</p>
+                  <p class="text-info">p.text-info</p>
+                  <p class="text-white">p.text-white</p>
+                  <p class="text-dark">p.text-dark</p>
+            </div>
+            <div class="col-6">
+                  <p class="bg-primary p-2 text-white">p.text-primary</p>
+                  <p class="bg-secondary p-2 text-white">p.text-secondary</p>
+                  <p class="bg-success p-2 text-white">p.text-success</p>
+                  <p class="bg-danger p-2 text-white">p.text-danger</p>
+                  <p class="bg-light p-2 text-white">p.text-light</p>
+                  <p class="bg-info p-2 text-white">p.text-info</p>
+                  <p class="bg-white p-2 text-dark">p.text-white</p>
+                  <p class="bg-dark p-2 text-white">p.text-dark</p>
+            </div>
+      </div>
+
+      <h1 class="mt-5">Responsive embeds</h1>
+      <hr>
+      <div class="row my-3">
+            <div class="col">
+                  <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                frameborder="0"></iframe>
+                  </div>
+            </div>
+            <div class="col">
+                  <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                frameborder="0"></iframe>
+                  </div>
+            </div>
+            <div class="col">
+                  <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                                frameborder="0"></iframe>
+                  </div>
+            </div>
+
+      </div>
+
+      <h1 class="mt-5">Tamaños</h1>
+      <hr>
+      <div class="row my-5">
+            <div class="col-4">
+                  <div class="bg-success text-white mt-2 w-25 p-3">25%</div>
+                  <div class="bg-success text-white mt-2 w-50 p-3">50%</div>
+                  <div class="bg-success text-white mt-2 w-75 p-3">75%</div>
+                  <div class="bg-success text-white mt-2 w-100 p-3">100%</div>
+            </div>
+            <div class="col-8">
+                  <div class="bg-success text-white mx-2 p-3 d-inline-block h-25">25%</div>
+                  <div class="bg-success text-white mx-2 p-3 d-inline-block h-50">50%</div>
+                  <div class="bg-success text-white mx-2 p-3 d-inline-block h-75">75%</div>
+                  <div class="bg-success text-white mx-2 p-3 d-inline-block h-100">100%</div>
+            </div>
+      </div>
+
+      <!-- links de bootstrap -->
+      <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+            <!-- <script src="js/app.js"></script> -->
+      </div>
+</body>
+
+</html>
