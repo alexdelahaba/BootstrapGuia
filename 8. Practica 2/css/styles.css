@@ -1,0 +1,262 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.barra-lateral {
+    background-color: #262a34;
+    color: #fff;
+    min-width: 300px;
+    min-height: 100vh;
+    padding: 0 !important;
+}
+
+.barra-lateral a {
+    color: white;
+
+}
+
+.barra-lateral .logo {
+    background-color: #0275db;
+    margin-bottom: 2px;
+}
+
+.barra-lateral .logo h2 {
+    font-size: 30px;
+    font-family: 'Open Sans',
+        sans-serif;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+.barra-lateral .menu a {
+    display: block;
+    padding: 20px;
+    /* font-family: 'Roboto'; */
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.barra-lateral .menu a:hover {
+    background-color: #35ae6b;
+    text-decoration: none;
+    color: #000;
+}
+
+.barra-lateral .menu a i {
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.main {
+    padding-top: 20px;
+
+}
+
+.main .columna {
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.main .titulo {
+    color: #262a34;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+
+.main .widget {
+    margin-bottom: 20px;
+
+}
+
+.main .widget form input[type='text'],
+.main .widget form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main .widget form input[type='text'] {
+    font-weight: 400;
+}
+
+.main .widget form textarea {
+    height: 300px;
+    min-height: 200px;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.main .widget form button {
+    background-color: #0275d8;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.main .widget form button:hover {
+    background-color: #025aa5;
+}
+
+.main .estadisticas .contenedor {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.main .estadisticas .caja {
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    padding: 20px 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.main .estadisticas .caja h3 {
+    margin-bottom: 10px;
+    color: #35ae6b;
+}
+
+.main .estadisticas .caja p {
+    color: #a8a8a8;
+    margin-bottom: 0;
+}
+
+.main .estadisticas .caja:first-child {
+    border-right: none;
+}
+
+.main .estadisticas .caja:last-child {
+    border-left: none;
+}
+
+.main .comentarios .contenedor {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main .comentarios .comentario {
+    background-color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.main .comentarios .comentario .foto {
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.main .comentarios .comentario .foto a {
+    display: inline-block;
+}
+
+.main .comentarios .comentario .foto img {
+    width: 100%;
+}
+
+.main .comentarios .comentario .texto {
+    flex: 1;
+}
+
+.main .comentarios .comentario .texto .texto-comentario {
+    font-size: 14px;
+}
+
+.main .comentarios .comentario .botones button {
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.main .comentarios .comentario .botones .aprobar {
+    background-color: #35ae6b;
+}
+
+.main .comentarios .comentario .botones .eliminar {
+    background-color: #b74848;
+}
+
+.main .comentarios .comentario .botones .bloquear {
+    color: #acacac;
+}
+
+.main .comentarios .comentario .botones .aprobar:hover {
+    background-color: #449d44;
+}
+
+.main .comentarios .comentario .botones .eliminar:hover {
+    background-color: #c9302c;
+}
+
+.main .comentarios .comentario .botones .bloquear:hover {
+    background-color: #acacac;
+    color: #fff;
+}
+
+/* --- --- MEDIAQUERIES --- --- */
+@media screen and (max-width: 1300px) {
+    .barra-lateral {
+        min-width: auto;
+    }
+
+    .barra-lateral .logo {
+        display: none;
+    }
+
+    .barra-lateral .menu a span {
+        display: none;
+    }
+
+    .barra-lateral .menu a i {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .barra-lateral {
+        min-height: auto;
+    }
+
+    .barra-lateral .menu a {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    .main .widget form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main .comentarios .comentario .foto {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main .comentarios .comentario .botones button {
+        width: 100%;
+    }
+}

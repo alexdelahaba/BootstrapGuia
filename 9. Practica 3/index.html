@@ -2,38 +2,413 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Basics</title>
-    <link rel="stylesheet"
-          type="text/css"
-          href="css/styles.css">
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-          crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <title>Red social</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="css/styles.css">
+      <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet">
+      <link rel="stylesheet"
+            href="css/fontello.css">
 </head>
 
-<body class="container">
+<body>
+
+      <header>
+            <div class="container">
+                  <div class="row justify-content-start">
+                        <div class="col-auto logo d-none d-sm-block">
+                              <a href="#">
+                                    <img src="img/logo.png"
+                                         alt="">
+                              </a>
+                        </div>
+                        <div class="col-12 col-sm-8 col-lg-6 order-1 order-sm-0 buscar">
+                              <form>
+                                    <div class="row no-gutters align-items-center">
+                                          <div class="col-10 columna">
+                                                <input type="text"
+                                                       name="busquedaInput"
+                                                       id="busquedaInput"
+                                                       placeholder="¿Qué quieres buscar?">
+                                          </div>
+                                          <div class="col-2 columna">
+                                                <button><i class="icon icon-search"></i></button>
+                                          </div>
+                                    </div>
+                              </form>
+                        </div>
+                        <nav class="col-12 col-sm-3 col-lg-2 menu col-lg-2 d-flex justify-content-between ml-auto">
+                              <a href="#"><i class="icon icon-users"></i></a>
+                              <a href="#"><i class="icon icon-bell-alt"></i></a>
+                              <a href="#"><i class="icon icon-chat"></i></a>
+                              <a href="#"
+                                 class="imagen"><img src="img/persona2.jpg"
+                                         width="22"
+                                         height="22"
+                                         alt=""></i></a>
+                        </nav>
+                  </div>
+            </div>
+      </header>
+
+      <main class="container">
+            <div class="row">
+                  <div class="col-12 col-md-3 barra-lateral-izquierda"
+                       id="barra-lateral-izquierda">
+                        <nav>
+                              <a href="#"><i class="icon icon-users"></i>Amigos</a>
+                              <a href="#"><i class="icon icon-mail"></i>Mensajes privados</a>
+                              <a href="#"><i class="icon icon-thumbs-up"></i>Páginas</a>
+                              <a href="#"><i class="icon icon-play"></i>Videos</a>
+                              <a href="#"><i class="icon icon-music"></i>Música</a>
+                              <a href="#"><i class="icon icon-book"></i>Libros</a>
+
+                        </nav>
+                  </div>
+                  <a href="#"
+                     class="fondo-enlace d-block d-md-none "
+                     id="fondo-enlace"></a>
+                  <div class="col contenido-principal">
+                        <div class="publicar">
+                              <div class="row">
+                                    <a href="#"
+                                       class="btn-menu d-block d-md-none d-flex justify-content-between"
+                                       id="btn-menu">
+                                          <span>Menú</span>
+
+                                          <i class="icon icon-menu"></i>
+                                    </a>
+                              </div>
+
+                              <div class="row justify-content-center">
+                                    <div class="col-auto foto">
+                                          <a href="#">
+                                                <img src="img/persona2.jpg"
+                                                     alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col">
+                                          <form action="">
+                                                <textarea name="mensaje"
+                                                          id="mensaje"
+                                                          placeholder="Publicar mensaje"></textarea>
+                                                <div class="contenedor-botones d-flex justify-content-between">
+                                                      <div class="media">
+                                                            <a href="#"><i class="icon icon-thumbs-up"></i></a>
+                                                            <a href="#"><i class="icon icon-play"></i></a>
+                                                            <a href="#"><i class="icon icon-music"></i></a>
+                                                      </div>
+                                                      <div>
+                                                            <button>Publicar</button>
+                                                      </div>
+                                                </div>
+                                          </form>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="publicacion ">
+                              <div class="row">
+                                    <div class="col-auto foto">
+                                          <a href="#">
+                                                <img src="img/persona5.jpg"
+                                                     alt="">
+                                          </a>
+
+                                    </div>
+
+                                    <div class="col">
+                                          <div class="post">
+                                                <a href="#"
+                                                   class="nombre">
+                                                      Pepita Jimenez
+                                                </a>
+                                                <p class="texto">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                      voluptate dolorem voluptatum veritatis minus maxime aliquam,
+                                                      inventore fuga veniam harum!
+                                                </p>
+                                                <div
+                                                     class="caja-botones d-flex justify-content-between algn-items-center">
+                                                      <button><i class="icon icon-thumbs-up"></i></button>
+                                                      <p>15<i class="icon icon-thumbs-up"></i></p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-10 offset-2">
+                                          <div class="comentarios">
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona2.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <form>
+                                                                  <textarea name=""
+                                                                            id=""
+                                                                            placeholder="Comentario"></textarea>
+                                                            </form>
+                                                      </div>
+                                                </div>
+                                                <div class="row  comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona2.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur
+                                                                  adipisicing elit. At, magnam.</p>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona5.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur
+                                                                  adipisicing elit. At, magnam. Lorem, ipsum dolor sit
+                                                                  amet consectetur adipisicing elit. Dicta, dignissimos.
+                                                            </p>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="publicacion ">
+                              <div class="row">
+                                    <div class="col-auto foto">
+                                          <a href="#">
+                                                <img src="img/persona3.jpg"
+                                                     alt="">
+                                          </a>
+
+                                    </div>
+
+                                    <div class="col">
+                                          <div class="post">
+                                                <a href="#"
+                                                   class="nombre">
+                                                      Juana Alcachofas
+                                                </a>
+                                                <p class="texto">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                      voluptate dolorem voluptatum veritatis minus maxime aliquam,
+                                                      inventore fuga veniam harum!
+                                                </p>
+                                                <div
+                                                     class="caja-botones d-flex justify-content-between algn-items-center">
+                                                      <button><i class="icon icon-thumbs-up"></i></button>
+                                                      <p>15<i class="icon icon-thumbs-up"></i></p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-10 offset-2">
+                                          <div class="comentarios">
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona2.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <form>
+                                                                  <textarea name=""
+                                                                            id=""
+                                                                            placeholder="Comentario"></textarea>
+                                                            </form>
+                                                      </div>
+                                                </div>
+                                                <div class="row  comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona2.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <div class="imagen">
+                                                                  <img src="img/paisaje1.jpg"
+                                                                       alt="">
+                                                            </div>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona3.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur
+                                                                  adipisicing elit. At, magnam. Lorem, ipsum dolor sit
+                                                                  amet consectetur adipisicing elit. Dicta, dignissimos.
+                                                            </p>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                        <div class="publicacion ">
+                              <div class="row">
+                                    <div class="col-auto foto">
+                                          <a href="#">
+                                                <img src="img/persona1.jpg"
+                                                     alt="">
+                                          </a>
+
+                                    </div>
+
+                                    <div class="col">
+                                          <div class="post">
+                                                <a href="#"
+                                                   class="nombre">
+                                                      Antonio Habichuelas
+                                                </a>
+                                                <p class="texto">
+                                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                      voluptate dolorem voluptatum veritatis minus maxime aliquam,
+                                                      inventore fuga veniam harum!
+                                                </p>
+                                                <div
+                                                     class="caja-botones d-flex justify-content-between algn-items-center">
+                                                      <button><i class="icon icon-thumbs-up"></i></button>
+                                                      <p>15<i class="icon icon-thumbs-up"></i></p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-10 offset-2">
+                                          <div class="comentarios">
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona5.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <form>
+                                                                  <textarea name=""
+                                                                            id=""
+                                                                            placeholder="Comentario"></textarea>
+                                                            </form>
+                                                      </div>
+                                                </div>
+                                                <div class="row  comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona5.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <div class="imagen">
+                                                                  <img src="img/paisaje2.jpg"
+                                                                       alt="">
+                                                            </div>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                                <div class="row comentario">
+                                                      <div class="col-auto foto">
+                                                            <a href="#">
+                                                                  <img src="img/persona4.jpg"
+                                                                       alt="">
+                                                            </a>
+                                                      </div>
+                                                      <div class="col">
+                                                            <p class="respuesta">Lorem ipsum dolor sit amet consectetur
+                                                                  adipisicing elit. At, magnam. Lorem, ipsum dolor sit
+                                                                  amet consectetur adipisicing elit. Dicta, dignissimos.
+                                                            </p>
+                                                            <a href="#">
+                                                                  Me gusta
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-3 barra-lateral-derecha d-none d-md-block">
+                        <h3>Publicidad</h3>
+                        <div class="ads">
+                              <a href="#"><img src="img/paisaje1.jpg"
+                                         width="300"
+                                         alt=""></a>
+                              <a href="#"><img src="img/paisaje2.jpg"
+                                         width="300"
+                                         alt=""></a>
+                        </div>
+
+                        <footer>
+                              <a href="#">Privacidad</a>
+                              <a href="#">Condiciones</a>
+                              <a href="#">Publicidad</a>
+                              <p class="copyright">Copyright © 2020</p>
+                        </footer>
+                  </div>
+
+            </div>
+      </main>
 
 
 
-
-
-    <!-- links de bootstrap -->
-    <div>
-        <script src="js/app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-                crossorigin="anonymous"></script>
-    </div>
+      <!-- links de bootstrap -->
+      <div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+            <script src="js/app.js"></script>
+      </div>
 </body>
 
 </html>
